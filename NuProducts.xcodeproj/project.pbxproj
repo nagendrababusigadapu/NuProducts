@@ -19,6 +19,7 @@
 		8ADBD631299935EA003236D2 /* NuProductsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBD630299935EA003236D2 /* NuProductsUITestsLaunchTests.swift */; };
 		8ADBD63F29993777003236D2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8ADBD63E29993777003236D2 /* Alamofire */; };
 		8ADBD6422999386B003236D2 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8ADBD6412999386B003236D2 /* SDWebImage */; };
+		8ADBD649299939B0003236D2 /* ProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBD648299939B0003236D2 /* ProductsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		8ADBD62A299935EA003236D2 /* NuProductsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NuProductsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ADBD62E299935EA003236D2 /* NuProductsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuProductsUITests.swift; sourceTree = "<group>"; };
 		8ADBD630299935EA003236D2 /* NuProductsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuProductsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8ADBD648299939B0003236D2 /* ProductsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 		8ADBD645299938C8003236D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8ADBD648299939B0003236D2 /* ProductsList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			files = (
 				8ADBD60F299935E1003236D2 /* ViewController.swift in Sources */,
 				8ADBD60B299935E1003236D2 /* AppDelegate.swift in Sources */,
+				8ADBD649299939B0003236D2 /* ProductsList.swift in Sources */,
 				8ADBD615299935E1003236D2 /* NuProducts.xcdatamodeld in Sources */,
 				8ADBD60D299935E1003236D2 /* SceneDelegate.swift in Sources */,
 			);
