@@ -20,6 +20,8 @@
 		8ADBD63F29993777003236D2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8ADBD63E29993777003236D2 /* Alamofire */; };
 		8ADBD6422999386B003236D2 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8ADBD6412999386B003236D2 /* SDWebImage */; };
 		8ADBD649299939B0003236D2 /* ProductsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBD648299939B0003236D2 /* ProductsList.swift */; };
+		8ADBD64C29993A4E003236D2 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBD64B29993A4E003236D2 /* APIService.swift */; };
+		8ADBD64E29993ACE003236D2 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADBD64D29993ACE003236D2 /* ProductsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		8ADBD62E299935EA003236D2 /* NuProductsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuProductsUITests.swift; sourceTree = "<group>"; };
 		8ADBD630299935EA003236D2 /* NuProductsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuProductsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8ADBD648299939B0003236D2 /* ProductsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsList.swift; sourceTree = "<group>"; };
+		8ADBD64B29993A4E003236D2 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		8ADBD64D29993ACE003236D2 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,7 @@
 		8ADBD609299935E1003236D2 /* NuProducts */ = {
 			isa = PBXGroup;
 			children = (
+				8ADBD64A29993A08003236D2 /* Services */,
 				8ADBD647299938E0003236D2 /* Utilities */,
 				8ADBD646299938D3003236D2 /* ViewModels */,
 				8ADBD645299938C8003236D2 /* Models */,
@@ -166,6 +171,7 @@
 		8ADBD646299938D3003236D2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8ADBD64D29993ACE003236D2 /* ProductsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -175,6 +181,14 @@
 			children = (
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8ADBD64A29993A08003236D2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8ADBD64B29993A4E003236D2 /* APIService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,8 +332,10 @@
 			files = (
 				8ADBD60F299935E1003236D2 /* ViewController.swift in Sources */,
 				8ADBD60B299935E1003236D2 /* AppDelegate.swift in Sources */,
+				8ADBD64E29993ACE003236D2 /* ProductsViewModel.swift in Sources */,
 				8ADBD649299939B0003236D2 /* ProductsList.swift in Sources */,
 				8ADBD615299935E1003236D2 /* NuProducts.xcdatamodeld in Sources */,
+				8ADBD64C29993A4E003236D2 /* APIService.swift in Sources */,
 				8ADBD60D299935E1003236D2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
