@@ -33,7 +33,17 @@ extension ProductsViewModel {
     func updateResponse(response:ProductList?) -> Bool {
         guard let response = response else { return false }
         productList = response
+        processFectchedNewsPosts(products: response.products)
         return true
     }
     
+    func getResponse() -> ProductList? {
+        return productList ?? nil
+    }
+    
+    private func processFectchedNewsPosts(products: [Product]) {
+        for item in products {
+            Items.createOrUpdate(item: item, with: AppDelegate.sharedAppDelegate.coreDataStack)
+        }
+    }
 }
