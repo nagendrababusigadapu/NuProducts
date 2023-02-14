@@ -54,10 +54,10 @@ public extension Items {
         self.price = "\(item.price ?? 0)"
         self.rating = "\(item.rating ?? 0.0)"
 
-        DispatchQueue.global(qos: .userInteractive).async {
+        DispatchQueue.global(qos: .default).async {
             if let imageUrl = item.thumbnail {
                 do {
-                    let imageData = try Data(contentsOf: URL(string: imageUrl)!)
+                    let imageData = try Data(contentsOf: URL(string: imag eUrl)!)
                     self.thumbnailImage = imageData
                 } catch {
                     print("Unable to load data: \(error)")

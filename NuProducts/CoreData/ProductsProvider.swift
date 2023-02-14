@@ -21,7 +21,7 @@ class ProductListProvider {
     }
 
     /**
-     A fetched results controller for the NewsPosts entity, sorted by date.
+     A fetched results controller for the records, sorted by product id.
      */
     lazy var fetchedResultsController: NSFetchedResultsController<Items> = {
         let fetchRequest: NSFetchRequest<Items> = Items.fetchRequest()

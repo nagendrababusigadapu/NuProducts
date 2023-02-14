@@ -11,17 +11,23 @@ import Lottie
 
 class HomeViewController: UITableViewController, NSFetchedResultsControllerDelegate {
     
+    //MARK: - Outlets
+    
     private let cellIdentifier = "ProductTableViewCell"
     private let viewModel = ProductsViewModel()
     private var productsList:ProductList? = nil
     private var loadDataFromLocal:Bool = false
     private var lottieAnimation: LottieAnimationView?
     
+    //MARK: - Properties
+    
     lazy var dataProvider:ProductListProvider  = {
         let managedContext = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
         let provider = ProductListProvider(with: managedContext, fetchedResultsControllerDelegate: self)
         return provider
     }()
+    
+    //MARK: - View Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -125,6 +131,8 @@ extension HomeViewController {
 
 extension HomeViewController{
     
+    //MARK: - Loader
+    
     private func showLoader(status:Bool){
         if status {
             lottieAnimation = LottieAnimationView(name: "loader")
@@ -144,6 +152,8 @@ extension HomeViewController{
         }
         
     }
+    
+    //MARK: - Alert
     
     func showAlert(withMsg msg:String){
         self.openAlert(message: msg, alertStyle: .alert, actionTitles: ["Ok"], actionStyles: [.default], actions: [{_ in}])
